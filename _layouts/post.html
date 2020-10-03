@@ -1,5 +1,21 @@
 ---
 layout: default
 ---
+
+<div class="container">
+    <div class="col">
+       <h1>{{page.titulo1}}</h1>
+        <p>{{page.text}}</p>
+        <h2>{{page.titulo2}}</h2>
+        <nav>{{page.lista}}</nav> 
+        <p>{{page.text2}}</p>
+        <br>
+        <br>
+        <br>
+        <p>{{page.footer}}</p>
+    </div>
+    
+    <div class="col_image"><img src= "{{page.image}}" width="100%" height="same-as-width"></div>
+</div>
+
 {{content}}
-<p> Postado no dia {{page.date}} na categoria {{page.categories}} </p>

@@ -4,9 +4,26 @@
 <meta charset ="UTF -8">
 <meta name =" viewport " content =" width =device -width , initial - scale =1.0">
 <title > {{ page.title }} </title >
-<link rel =" stylesheet " href ="/assets/css/styles.css">
+<link rel =" stylesheet " href ="{{'/assets/css/styles.css' | relative_url}}">
 </head >
 <body >
+
+<center><div class="backgroundcima">
+
+<div class="imagem"><img src="{{'assets/images/katana_wallpaper2.jpg' | relative_url}}" width="100%" height="300" alt=""/></div>
+
+<div>
+    <nav>
+    <ul class="menu">
+    <li><a href="{{'/' | relative_url}}">Home</a></li>  
+    {% for post in site.posts %}
+    <li> <a href= "{{post.url | relative_url}}"> {{post.title}} </a></li>
+    {% endfor %}
+    </ul>
+    </nav>
+</div>
 {{ content }}
+
+</div>
 </body >
 </html >
