@@ -90,7 +90,7 @@ a {
 body{
     font-family: arial, helvetica, sans-serif;
     font-size: 12px;
-    background-image:url(/assets/images/samurai_background.jpg);
+    background-image:url("{{'/assets/images/samurai_background.jpg' | relative_url}}");
 	background-size:auto;
 	background-position: center;	
 }
