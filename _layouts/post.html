@@ -15,7 +15,7 @@ layout: default
         <p>{{page.footer}}</p>
     </div>
     
-    <div class="col_image"><img src= "{{page.image}}" width="100%" height="same-as-width"></div>
+    <div class="col_image"><img src= "{{'page.image' | relative_url}}" width="100%" height="same-as-width"></div>
 </div>
 
 {{content}}
